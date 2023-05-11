@@ -2,8 +2,7 @@ import Collapse from "../../../components/collapse/Collapse";
 import Details from "../../../components/details/Details";
 import Features from "../../../components/features/Features";
 import Button from "../../../components/small/button/Button";
-import Colors from "../../../components/small/colors/Colors";
-import { colorsArray } from "../../../assets/colors";
+
 
 export default function Product() {
 
@@ -50,8 +49,13 @@ export default function Product() {
                     {/* Color choosing section */}
                     <div className="py-2 text-sm flex flex-col gap-1">
                         <p>Color: <span className="font-semibold">Black</span></p>
-                        {/* Just pass the colors array and it will map over them */}
-                        <Colors colors={colorsArray} />
+                        <div className="flex items-center gap-1 ">
+                            <div className={`md:px-8 px-6 py-4 rounded-sm cursor-pointer bg-neutral-200`} />
+                            <div className={`md:px-8 px-6 py-4 rounded-sm cursor-pointer bg-neutral-300`} />
+                            <div className={`md:px-8 px-6 py-4 rounded-sm cursor-pointer bg-neutral-400`} />
+                            <div className={`md:px-8 px-6 py-4 rounded-sm cursor-pointer bg-neutral-500`} />
+                            <div className={`md:px-8 px-6 py-4 rounded-sm cursor-pointer bg-neutral-600`} />
+                        </div>
                     </div>
 
                     {/* Size choosing section */}
