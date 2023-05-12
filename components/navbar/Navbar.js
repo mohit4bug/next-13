@@ -6,14 +6,22 @@ function RoundButton({ children }) {
     )
 }
 
-export default function Navbar() {
+export default function Navbar({ setDrawer }) {
     return (
-        <div className="bg-white w-full p-4 flex items-center justify-between shadow-sm sticky top-0">
+        <div className="bg-white w-full p-4 flex items-center justify-between shadow-sm sticky top-0 z-10">
+
+            {/* Ham burgur */}
+            <span className="block md:hidden cursor-pointer" onClick={() => setDrawer(true)}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </span>
+
             {/* Logo */}
             <h1 className="text-2xl">MERRNO</h1>
 
             {/* Cat links */}
-            <ul className="md:flex hidden gap-4 font uppercase text-sm font-semibold ">
+            <ul className="md:flex hidden gap-4  uppercase text-sm font-semibold ">
                 <li className="cursor-pointer rounded-full transition-all hover:bg-slate-100 p-2 px-4">Men</li>
                 <li className="cursor-pointer rounded-full transition-all hover:bg-slate-100 p-2 px-4">Women</li>
                 <li className="cursor-pointer rounded-full transition-all hover:bg-slate-100 p-2 px-4">Beauty</li>
