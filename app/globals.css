@@ -14,3 +14,15 @@ body {
 .sub-heading {
     @apply font-semibold text-3xl;
 }
+
+.btn-primary-xl {
+    @apply bg-slate-800 text-white border-2 border-slate-800 px-6 py-3 rounded-full shadow-sm items-center;
+}
+
+.btn-primary-md {
+    @apply bg-slate-800 text-white border-2 border-slate-800 px-4 py-2 rounded-full text-sm shadow-sm;
+}
+
+.btn-secondary-md {
+    @apply bg-white border-2 border-slate-800 px-4 py-2 rounded-full text-sm shadow-sm;
+}
