@@ -1,6 +1,6 @@
 export default function Blog() {
     return (
-        <div className="upper-border py-8 flex gap-24">
+        <div className="upper-border py-8 gap-2 md:gap-24 flex-col flex md:flex-row">
             <p className="gray-color font-semibold min-w-fit mt-[0.4rem]">August 7, 2023</p>
             <div className="grow">
                 <h2 className="font-bold text-2xl">New features in v1</h2>
@@ -13,7 +13,7 @@ export default function Blog() {
 
                 <p className="gray-color mt-6">
                     An overview of the new features released in v1 - code block copy, multiple
-                    authors, frontmatter <br/>
+                    authors, frontmatter
                     layout and more
                 </p>
 

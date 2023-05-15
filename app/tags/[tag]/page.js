@@ -1,10 +1,13 @@
 import Header from "@/components/Header";
 import Blog from "@/components/Blog";
 
-export default function Blogs() {
+export default function TagPage({params}) {
+
+    const {tag} = params
+
     return (
         <main>
-            <Header>All posts</Header>
+            <Header>{tag}</Header>
             <Blog/>
             <Blog/>
             <Blog/>

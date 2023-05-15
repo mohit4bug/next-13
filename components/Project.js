@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Project() {
     return (
-        <div className="h-auto w-[48.5%] border-2 border-neutral-500 rounded-xl overflow-hidden">
+        <div className="h-auto w-full border-2 border-neutral-500 rounded-xl overflow-hidden">
             {/*Image container*/}
             <div className="relative h-[20rem] w-full">
                 <Image src="/project.png" alt="project" fill className="object-cover"/>

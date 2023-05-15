@@ -1,7 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
+
 function Search() {
     return (
         <div
-            className="h-[2.5rem] flex items-center bg-neutral-900 max-w-prose rounded-md px-2  gap-2">
+            className="h-[2.5rem] flex items-center bg-neutral-800 max-w-prose rounded-md px-2  gap-2">
             <input
                 placeholder="Search articles"
                 className="w-full h-full bg-transparent border-none outline-none"/>
@@ -22,11 +25,31 @@ function Sub({sub}) {
     )
 }
 
-export default function Header({children, sub}) {
+export default function Header({children, sub, center, date, isUserDetails}) {
+
+    const style = center ? "pb-8 flex items-center flex-col" : "pb-8"
+
     return (
-        <header className="pb-8">
-            <h1 className="capitalize font-extrabold text-[4rem]">{children}</h1>
-            {sub ? <Sub sub={sub}/> : <Search/>}
+        <header className={style}>
+            {date && <p className="gray-color">{date}</p>}
+            <h1 className="capitalize font-extrabold text-[4rem]
+            bg-gradient-to-r from-rose-500  to-white inline-block
+             text-transparent bg-clip-text drop-shadow-[3px_4px_35px_rgba(244,63,94,0.51)]">
+                {children}
+            </h1>
+            {sub || date ? <Sub sub={sub}/> : <Search/>}
+
+            {isUserDetails && <div className="gap-2 py-4 pt-0 flex md:hidden">
+                {/*Image container*/}
+                <div className="relative h-[2.8rem] w-[2.8rem] rounded-full overflow-hidden">
+                    <Image src="/MohitAbout.jpeg" alt="me" fill className="object-cover"/>
+                </div>
+                <div>
+                    <p>Mohit Khatri</p>
+                    <Link href="https://github.com/mohit4bug" className="primary-color text-sm">@Github</Link>
+                </div>
+            </div>
+            }
         </header>
     )
 }
