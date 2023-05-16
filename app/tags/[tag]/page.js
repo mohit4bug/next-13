@@ -1,11 +1,15 @@
+'use client'
 import Header from "@/components/Header";
 import Blog from "@/components/Blog";
 import data from "@/data/db.json"
 import GradientHeading from "@/components/GradientHeading";
+import Search from "@/components/Search";
+import { useState } from "react";
 
 export default function TagPage({ params }) {
 
     const { tag } = params
+    const [query, setQuery] = useState("")
 
     const allTagBlogs = data.blogs.filter(blog => blog.tags.includes(tag.toString()))
     if (!tag)
@@ -15,9 +19,9 @@ export default function TagPage({ params }) {
 
     return (
         <main>
-            <Header>{tag}</Header>
-            {allTagBlogs.map((blog) => (
-                <Blog data={blog} />
+            <Header search={<Search query={query} setQuery={setQuery} />}>{tag}</Header>
+            {allTagBlogs.filter((blog) => blog.title.toLowerCase().includes(query.toLowerCase())).map((blog) => (
+                <Blog data={blog} key={blog.title} />
             ))}
         </main>
     )
