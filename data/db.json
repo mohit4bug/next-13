@@ -1,0 +1,119 @@
+{
+    "blogs": [
+        {
+            "title": "React vs Angular",
+            "date": "May 16, 2023",
+            "headings": {
+                "Introduction": [
+                    "React is a popular JavaScript library for building user interfaces, known for its component-based architecture and efficient virtual DOM rendering."
+                ],
+                "Why React over Angular?": [
+                    "React's component-based approach provides greater flexibility and reusability, allowing developers to build modular and maintainable codebases.",
+                    "React's virtual DOM implementation optimizes rendering performance, resulting in faster updates and smoother user experiences compared to Angular's two-way data binding."
+                ],
+                "Conclusion": [
+                    "With its component-based architecture, efficient rendering, and a thriving ecosystem, React offers developers a powerful and efficient framework for building modern user interfaces."
+                ]
+            },
+            "tags": [
+                "React",
+                "Angular",
+                "NodeJS"
+            ],
+            "previous": "",
+            "next": "Vue over React?"
+        },
+        {
+            "title": "Vue over React?",
+            "date": "June 10, 2023",
+            "headings": {
+                "Introduction": [
+                    "Vue.js is a progressive JavaScript framework for building user interfaces, known for its simplicity and ease of integration with other projects."
+                ],
+                "Why Vue.js over React?": [
+                    "Vue.js offers a simpler learning curve, making it more accessible for developers who are new to front-end frameworks.",
+                    "Vue.js provides a more flexible and modular architecture, allowing developers to easily integrate it into existing projects or use it for specific parts of an application."
+                ],
+                "Conclusion": [
+                    "With its simplicity, flexibility, and ease of integration, Vue.js offers developers an excellent alternative to React for building modern user interfaces."
+                ]
+            },
+            "tags": [
+                "Vue",
+                "React",
+                "Frameworks"
+            ],
+            "previous": "React vs Angular",
+            "next": "NodeJS (Runtime)"
+        },
+        {
+            "title": "NodeJS (Runtime)",
+            "date": "July 5, 2023",
+            "headings": {
+                "Introduction": [
+                    "Node.js is a popular JavaScript runtime built on Chrome's V8 JavaScript engine, allowing developers to build scalable and high-performance server-side applications."
+                ],
+                "Why Node.js for server-side development?": [
+                    "Node.js offers a single-threaded, event-driven architecture, enabling efficient handling of multiple concurrent connections.",
+                    "Node.js leverages JavaScript, allowing developers to use the same language for both front-end and back-end development, resulting in a more cohesive development experience."
+                ],
+                "Conclusion": [
+                    "With its efficient architecture and unified language, Node.js offers developers a powerful platform for building high-performance server-side applications."
+                ]
+            },
+            "tags": [
+                "NodeJS",
+                "Server",
+                "Runtime"
+            ],
+            "previous": "Vue over React?",
+            "next": "Is GraphQL still better?"
+        },
+        {
+            "title": "Is GraphQL still better?",
+            "date": "August 1, 2023",
+            "headings": {
+                "Introduction": [
+                    "GraphQL is a query language and runtime for APIs, offering a more flexible and efficient alternative to traditional REST APIs."
+                ],
+                "Why GraphQL over REST?": [
+                    "GraphQL allows clients to request only the data they need, reducing the amount of over-fetching and under-fetching.",
+                    "GraphQL provides a single endpoint for all data requests, simplifying API management and versioning."
+                ],
+                "Conclusion": [
+                    "With its flexible query language and efficient data fetching, GraphQL offers developers a powerful alternative to traditional REST APIs for building modern applications."
+                ]
+            },
+            "tags": [
+                "GraphQL",
+                "REST",
+                "API"
+            ],
+            "previous": "NodeJS (Runtime)",
+            "next": "Don't use JavaScript!"
+        },
+        {
+            "title": "Don't use JavaScript!",
+            "date": "September 3, 2023",
+            "headings": {
+                "Introduction": [
+                    "TypeScript is a superset of JavaScript that adds optional static typing, enabling developers to catch errors early and write more robust code."
+                ],
+                "Why TypeScript over JavaScript?": [
+                    "TypeScript's static typing helps developers catch errors during development, reducing the likelihood of runtime errors.",
+                    "TypeScript offers better tooling and editor support, resulting in a more productive development experience."
+                ],
+                "Conclusion": [
+                    "With its static typing and improved tooling, TypeScript offers developers a more robust and efficient alternative to JavaScript for building modern applications."
+                ]
+            },
+            "tags": [
+                "JavaScript",
+                "TypeScript",
+                "Languages"
+            ],
+            "previous": "Is GraphQL still better?",
+            "next": ""
+        }
+    ]
+}
