@@ -1,0 +1,17 @@
+.parent-css {
+    .child-css {
+        display: none;
+    }
+
+    &:hover {
+        .child-css {
+            display: flex;
+        }
+
+
+        .arrow {
+            transition: 0.2s ease-in;
+            transform: rotate(180deg);
+        }
+    }
+}
