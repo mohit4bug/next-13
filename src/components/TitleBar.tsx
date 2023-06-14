@@ -23,7 +23,7 @@ export default function TitleBar() {
             {/* Links */}
             <div className="hidden sm:flex text-neutral-200 text-sm gap-2 px-4 mr-auto">
                 {buttons.map((title) => (
-                    <button className="hover:bg-neutral-700  px-2 py-[0.2rem] rounded-md">{title}</button>
+                    <button key={title} className="hover:bg-neutral-700  px-2 py-[0.2rem] rounded-md">{title}</button>
                 ))}
             </div>
             <span className="sm:hidden mr-auto ml-4 text-neutral-200 cursor-pointer">
